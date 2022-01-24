@@ -17,6 +17,37 @@ if(confirmation==true){
     }else{
         alert("you are welcom  "+name1);
     }
+
+    
+
+
+}
+let traviling=prompt("have you ever travel");
+    let visitPetra=prompt("have you ever visit petra ");
+    let goodLearner=prompt("do ypo think  you are good learner ");
+
+    function checkTheAnswer (theanswer){
+        if(theanswer==""){
+            return "invalid"
+        }
+        return theanswer;
+    }
+
+let travilingAnswer= checkTheAnswer(traviling);
+let visitPetraAnswer=checkTheAnswer(visitPetra);
+let goodLearnerAnswer=checkTheAnswer(goodLearner);
+
+let theAnswerArr=[travilingAnswer,visitPetraAnswer,goodLearnerAnswer]; 
+//console.log(theAnswerArr)
+
+function printTheAnswer (answer){
+    
+    for(let i=0;i<answer.length;i++){
+        console.log(answer);
+
+    }
+    
     
 }
+printTheAnswer(theAnswerArr);
 
